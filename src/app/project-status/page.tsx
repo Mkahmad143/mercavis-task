@@ -1,3 +1,4 @@
+"use client";
 import { Progress } from "@heroui/react";
 import { projects } from "../DummyData/projectsData";
 import { BiSort } from "react-icons/bi"; // Importing the Sort Icon
@@ -26,8 +27,8 @@ export default function ProjectStatus() {
   };
 
   return (
-    <div className="grid w-full max-w-screen-xl grid-cols-1 gap-4 px-4 py-6 mx-auto sm:grid-cols-2 lg:grid-cols-6 xl:grid-cols-12">
-      <section className="order-1 col-span-1 bg-white rounded-lg shadow-xl sm:col-span-2 lg:col-span-4 xl:col-span-6">
+    <div className="grid w-full max-w-screen-xl grid-cols-1 gap-4 px-4 py-6 mx-auto lg:place-items-center sm:grid-cols-2 lg:grid-cols-6 xl:grid-cols-12">
+      <section className="order-1 xl:pb-2 col-span-1 bg-white rounded-lg shadow-xl sm:col-span-2 lg:col-span-6 lg:w-[57rem] xl:w-[37.5rem] xl:col-span-6">
         <div className="relative flex items-center justify-between p-4 mr-auto">
           <h1 className="font-semibold text-[1rem]">Project Status</h1>
           <button className="bg-gray-400/20 text-[.7rem] sm:text-sm px-4 rounded-md py-2 inline-flex justify-between items-center">
@@ -137,7 +138,7 @@ export default function ProjectStatus() {
       </section>
 
       {/* calender */}
-      <section className="order-2 sm:order-3 lg:order-2 lg:col-span-2 xl:col-span-6">
+      <section className="order-2 sm:order-3 lg:order-2 lg:col-span-4 xl:col-span-6">
         <Calender />
       </section>
       {/* daily task */}
@@ -145,7 +146,7 @@ export default function ProjectStatus() {
         <DailyTask />
       </section>
       {/* Employee */}
-      <section className="order-4 sm:order-5 lg:order-4 lg:col-span-4 xl:col-span-4 xl:order-3">
+      <section className="order-4 sm:order-5 lg:order-4 lg:col-span-3 xl:col-span-4 xl:order-3">
         <Employee />
       </section>
       {/* Attendance */}

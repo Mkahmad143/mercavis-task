@@ -10,6 +10,13 @@ export const date = [
   { day: "Tue", date: "22" },
   { day: "Wed", date: "23" },
   { day: "Thu", date: "24" },
+  { day: "Fri", date: "25" },
+  { day: "Sat", date: "26" },
+  { day: "Sun", date: "27" },
+  { day: "Mon", date: "28" },
+  { day: "Tue", date: "29" },
+  { day: "Wed", date: "30" },
+  { day: "Thu", date: "31" },
 ];
 
 export const meeting = [

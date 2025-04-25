@@ -21,7 +21,7 @@ const Calender = () => {
           <span className="w-1 h-7 left-0 bg-[#009DB5] absolute"></span>
         </div>
         <section className="overflow-x-scroll md:mx-5 scrollbar">
-          <div className="flex gap-4 md:gap-7 my-7 md:my-3">
+          <div className="flex gap-4 md:gap-6 my-7 md:my-3">
             {date.map((item, index) => (
               <div
                 key={index}
@@ -30,10 +30,10 @@ const Calender = () => {
                 <article className="space-y-4 text-center">
                   <p className="p-1 text-gray-400">{item.day}</p>
                   <p
-                    className={`text-gray-800 p-1 py-2 rounded-xl font-semibold  ${
+                    className={`text-gray-800 px-3 py-2 rounded-xl font-semibold   ${
                       currentdate == Number(item.date)
                         ? "bg-[#009DB5] shadow-lg shadow-blue-500 text-white "
-                        : "first:bg-[#009DB5] "
+                        : ""
                     }`}
                   >
                     {item.date}

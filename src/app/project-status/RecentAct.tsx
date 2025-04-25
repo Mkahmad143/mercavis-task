@@ -17,7 +17,7 @@ export default function RecentAct() {
               <img src={img} alt={name} className="rounded-full w-9 h-9" />
               <div>
                 <h1 className="font-semibold ">{name}</h1>
-                <h1 className="text-[.6rem] text-gray-400 line-clamp-1 sm:line-clamp-2">
+                <h1 className="text-[.6rem] sm:text-[.8rem] text-gray-400 line-clamp-1 sm:line-clamp-2">
                   {comment}
                 </h1>
               </div>
